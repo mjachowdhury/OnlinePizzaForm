@@ -1,4 +1,4 @@
- //Author: Mohammed Alom Student ID: R00144214 Email: mohammed.alom@mycit.ie
+ //Author: Mohammed Jahangir
 
 
 //This function will checks which options are checked and adds the amount to sum to get the total amount
