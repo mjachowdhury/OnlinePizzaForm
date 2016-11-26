@@ -1,8 +1,5 @@
  //Author: Mohammed Alom 
-
-
-//This function will checks which options are checked and adds the amount to sum to get the total amount
-//if deselect from the check box then price will automatically will update in the form
+//this function for sliding the image
 
 var image1 = new Image()
 image1.src = "images/header1.jpg";
@@ -20,13 +17,14 @@ var step = 1;
 
 function slideit()
 {
-	document.images.slide.src=eval("image"+step+".src");
+	document.images.myPhoto.src=eval("image"+step+".src");
 	if(step<4){
 	step++;}
 	else
 	{step=1;}
 	setTimeout("slideit()",2500);
 }
+
 
 /*
 var myImage = document.getElementById("myPhoto");
@@ -53,6 +51,9 @@ myPhoto.onclick=function()
 }
 
 */
+
+//This function will checks which options are checked and adds the amount to sum to get the total amount
+//if deselect from the check box then price will automatically will update in the form
 
 function sumTotal() 
 {
@@ -95,6 +96,7 @@ function sumTotal()
   {
     sum = sum + 0.50;
   }
+  //discount part
   if (document.getElementById('Email').checked) 
   {
 	var discount=0.05;
@@ -104,11 +106,12 @@ function sumTotal()
   var total = document.getElementById("totalPrice"); //var total is variable & will work with id 'totalPrice'
 
   total.style.display = 'block'; // will display total price as a block
-  total.innerHTML = "Total Price For The Mug  &euro;  " + sum.toFixed(2); // € is for euro sign and toFixed(2) is for total price will show after decemil value untill 2 number
+  total.innerHTML = "Total Price For The Pizza  &euro;  " + sum.toFixed(2); // € is for euro sign and toFixed(2) is for total price will show after decemil value untill 2 number
   var price = document.getElementById('tprice').value = sum.toFixed(2); //this part for the after submit to see in the form total price.
 }
 
-function submitForm() // This function for submit the form and also will give alert if nothing select
+// This function for submit the form and also will give alert if nothing select
+function submitForm() 
 {	
 	if (document.getElementById('tprice').value == '')
 	{
@@ -119,7 +122,8 @@ function submitForm() // This function for submit the form and also will give al
 }
 
  
-function hideTotal() //This function for during onload the page total price for the mug will not show before select anything 
+//This function for during onload the page total price for the pizza will not show before select anything  
+function hideTotal() 
 {
   var total = document.getElementById('totalPrice');
   total.style.display = 'none';
@@ -127,7 +131,7 @@ function hideTotal() //This function for during onload the page total price for 
 
 
  
-
+//this function for selecting pizza
   function pizzaSizeChange(id) {
    var el = document.getElementById(id);
 
@@ -138,7 +142,7 @@ function hideTotal() //This function for during onload the page total price for 
           el.style.visibility="visible";
      }
  }
-
+//this function for selecting topping
  function pizzaToppingChange(id) {
    var el = document.getElementById(id);
 
