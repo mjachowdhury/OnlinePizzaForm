@@ -1,4 +1,4 @@
-/*Author : Mohammed Jahangir*/
+/*Author : Mohammed Jahangir Alom.*/
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -18,7 +18,7 @@ body {
 header {
 	height: 140px;
 	padding: 0 15px;
-	background-color: black;
+	background-color: #7CFC00;
 	color: white;
 	margin-bottom: 5px;
 }
@@ -38,6 +38,11 @@ header h3 {
 	text-indent: 5%;
 }*/
  
+h3{
+	text-align:center;
+	color:#D2691E;
+	text-decoration:underline;
+} 
 
 #pagewrap, header, footer {
 	border: solid 1px #ccc;
@@ -118,66 +123,9 @@ img.home {
 /* for pizza pictures*/
 
  
-fieldset img.checkbox { position: absolute; top: 450px; right: 300px; float: right;}
+fieldset img.checkbox { position: absolute; top: 450px; right: 310px; float: right;}
 
-
-body img #myImage{
-  background-image:url(images/1.jpg);
-}
-
-body img #myImage:hover {
-  background-image:url(images/2.jpg);
-}
-
-
-/*------------------end of home page part------------------------------*/
-
-/*This allows equal size for both columns*/
-/*main form {
-  display: flex;
-  border-style: ridge;
-  border-width: 3px;
-  border-color: red;
-  margin-left: 30px;
-  margin-right: 30px;
-  padding-left: 40px;
-}*/
-/*
-#part1 {
-  flex-basis: 50%;
-}
-*/
-
-/*This allows equal size for both columns*/
-/*
-#part2 {
-  flex-basis: 50%;
-}
-*/
-/*
-main section {
-  margin: 40px;
-  padding: 15px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: grey;
-  background-color: DarkSeaGreen;
-  box-shadow: 10px 8px 4px grey;
-}
-*/
-
-/*This formats all h3  the same inside the main section h3 part*/
-/*
-main section h3 {
-  border-color: red;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 2px;
-  background: linear-gradient(90deg, #FFCCCC, white);
-  padding: 1px;
-  font-variant: small-caps;
-}
-*/
+ 
 
 /*fieldset part style*/
 
@@ -187,14 +135,7 @@ fieldset {
 }
 
 
-/*This floats the mug image to the right hand side*/
-/*
-img {
-  float: right;
-  border-radius: 15px;
-  border: 1px solid red;
-}
-*/
+ 
 
 /*This floats the cost amounts to the right*/
 
@@ -215,7 +156,7 @@ img {
   padding: 5px;
   border-radius: 6px;
   box-shadow: 3px 4px 3px lightblue;
-  margin-left: 50px;
+  margin-left: 650px;
   margin-top: 5px;
   text-align: center;
   background-color: Salmon;

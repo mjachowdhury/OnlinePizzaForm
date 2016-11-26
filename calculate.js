@@ -1,4 +1,4 @@
- //Author: Mohammed Jahangir
+ //Author: Mohammed Alom 
 
 
 //This function will checks which options are checked and adds the amount to sum to get the total amount
@@ -126,14 +126,7 @@ function hideTotal() //This function for during onload the page total price for 
 }
 
 
-/*
-//This function will checks the colour choosen and changes the image depending on the option
-function colourChange() 
-{
-  var size = document.getElementById("size").value; //var color is a variable and will store the color choose option
-  document.getElementById("pizzasize").src = "images/" + size + ".jpeg"; // All the image is .jpg format
-}
-*/
+ 
 
   function pizzaSizeChange(id) {
    var el = document.getElementById(id);
@@ -146,50 +139,21 @@ function colourChange()
      }
  }
 
- 
- /*this is another mouse over event function
- $(document).ready(function() {
-    $( "#myImage" ).mouseover(function(){
-        $(this).attr("src", "images/footer2.jpg");
-    });
+ function pizzaToppingChange(id) {
+   var el = document.getElementById(id);
 
-    $( "#myImage" ).mouseout(function(){
-        $(this).attr("src", "images/footer1.jpg");
-    });
-});
- 
- */
- /* this function for mouseover event
- 
- $('#myImage').hover(function() {
-  $(this).attr('src', 'images/footer1.jpg');
-}, function() {
-  $(this).attr('src', 'images/footer2.jpg');
-});
- 
-*/ 
-/* this function for mouse over evernt
- function mouseOver()
- {
-	 document.getElementById("myImage").src="images/footer2.jpg";
- }
-
- 
- function mouseOut()
- {
-	 document.getElementById("myImage").src="images/footer2.jpg";
+   if (el.style.visibility=="visible") {
+          el.style.visibility="hidden";
+     }
+     else {
+          el.style.visibility="visible";
+     }
  }
  
  
-document.getElementById("myImage").addEventListener("mouseover", mouseOver);
-document.getElementById("myImage").addEventListener("mouseout", mouseOut);
-*/
-/*
-function mouseOver() {
-    document.getElementById("demo").style.color = "red";
-}
-
-function mouseOut() {
-    document.getElementById("demo").style.color = "black";
-}
-*/
+  
+ 
+ 
+ 
+ 
+ 
