@@ -122,25 +122,17 @@ img.home {
 }
 /* for pizza pictures*/
 
- 
 fieldset img.checkbox { position: absolute; top: 450px; right: 310px; float: right;}
-
- 
 
 /*fieldset part style*/
 
 fieldset {
   padding: 5px;
-  background-color: ;
 }
-
-
- 
 
 /*This floats the cost amounts to the right*/
 
-.cost {
-   
+.cost { 
   position: absolute;
   right:650px;
 }
@@ -176,13 +168,11 @@ fieldset {
 	vertical-align: top;
 }
 
-
 /* Footer left */
 
 .footer-part .footer-left {
 	width: 40%;
 }
-
 
 /* The company logo */
 
@@ -195,7 +185,6 @@ fieldset {
 .footer-part h3 span {
 	color: #5383d3;
 }
-
 
 /* Footer links */
 
@@ -309,11 +298,11 @@ fieldset {
 /*--------------------end of footer part--------------------------*/
 
 /*Form validation part start*/
-
+/*
 legend {
     padding:0 5px;
     text-align:right;
-}
+}*/
 fieldset > div {
     margin:10px 0;
 }
